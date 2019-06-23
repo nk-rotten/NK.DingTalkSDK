@@ -8,7 +8,6 @@ namespace NK.DingTalkWeb.Controllers
     {
         public ActionResult Index()
         {
-            Attendance.ListSchedule("", DateTime.Now);
             return View();
         }
 
