@@ -55,7 +55,6 @@
     <Compile Include="Api\WorkRecord.cs" />
     <Compile Include="Base\IDingTalkRequest.cs" />
     <Compile Include="DingTalkConstants.cs" />
-    <Compile Include="FastJSON\Class1.cs" />
     <Compile Include="FastJSON\dynamic.cs" />
     <Compile Include="FastJSON\Formatter.cs" />
     <Compile Include="FastJSON\Getters.cs" />
