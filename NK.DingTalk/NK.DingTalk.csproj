@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
@@ -42,18 +45,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\AccessToken.cs" />
     <Compile Include="Api\Attendance.cs" />
     <Compile Include="Api\BlackBoard.cs" />
     <Compile Include="Api\Calendar.cs" />
+    <Compile Include="Api\Chat.cs" />
     <Compile Include="Api\Checkin.cs" />
     <Compile Include="Api\CSPace.cs" />
     <Compile Include="Api\DefaultDingTalkClient.cs" />
+    <Compile Include="Api\Department.cs" />
+    <Compile Include="Api\Employee.cs" />
     <Compile Include="Api\Health.cs" />
     <Compile Include="Api\IDingTalkClient.cs" />
     <Compile Include="Api\Media.cs" />
+    <Compile Include="Api\Message.cs" />
     <Compile Include="Api\MicroApp.cs" />
+    <Compile Include="Api\Process.cs" />
+    <Compile Include="Api\ProcessInstance.cs" />
+    <Compile Include="Api\Report.cs" />
+    <Compile Include="Api\Role.cs" />
+    <Compile Include="Api\User.cs" />
     <Compile Include="Api\WorkRecord.cs" />
     <Compile Include="Base\IDingTalkRequest.cs" />
+    <Compile Include="CacheHelper.cs" />
+    <Compile Include="DateHelper.cs" />
     <Compile Include="DingTalkConstants.cs" />
     <Compile Include="FastJSON\dynamic.cs" />
     <Compile Include="FastJSON\Formatter.cs" />
@@ -988,6 +1003,8 @@
     <Compile Include="TopApi\Util\TopUtils.cs" />
     <Compile Include="TopApi\Util\WebUtils.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
