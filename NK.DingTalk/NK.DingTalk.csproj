@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Api\AccessToken.cs" />
     <Compile Include="Api\Attendance.cs" />
+    <Compile Include="Api\Auth.cs" />
     <Compile Include="Api\BlackBoard.cs" />
     <Compile Include="Api\Calendar.cs" />
     <Compile Include="Api\Chat.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="Api\DefaultDingTalkClient.cs" />
     <Compile Include="Api\Department.cs" />
     <Compile Include="Api\Employee.cs" />
+    <Compile Include="Api\Exocontact.cs" />
     <Compile Include="Api\Health.cs" />
     <Compile Include="Api\IDingTalkClient.cs" />
     <Compile Include="Api\Media.cs" />
@@ -64,6 +66,8 @@
     <Compile Include="Api\ProcessInstance.cs" />
     <Compile Include="Api\Report.cs" />
     <Compile Include="Api\Role.cs" />
+    <Compile Include="Api\SNS.cs" />
+    <Compile Include="Api\SSO.cs" />
     <Compile Include="Api\User.cs" />
     <Compile Include="Api\WorkRecord.cs" />
     <Compile Include="Base\IDingTalkRequest.cs" />

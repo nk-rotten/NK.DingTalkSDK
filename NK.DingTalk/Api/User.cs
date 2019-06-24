@@ -213,5 +213,21 @@ namespace NK.DingTalk.Api
             return response;
         }
 
+        /// <summary>
+        /// 获取用户userid 通过免登授权码和access_token获取用户的userid。
+        /// </summary>
+        /// <param name="accessToken"></param>
+        /// <param name="code"></param>
+        /// <returns></returns>
+        public OapiUserGetuserinfoResponse GetUserInfo(string accessToken,string code)
+        {
+            IDingTalkClient client = new DefaultDingTalkClient("https://oapi.dingtalk.com/user/getuserinfo");
+            OapiUserGetuserinfoRequest request = new OapiUserGetuserinfoRequest();
+            request.Code = code;
+            request.SetHttpMethod("GET");
+            OapiUserGetuserinfoResponse response = client.Execute(request, accessToken);
+            return response;
+        }
+
     }
 }
